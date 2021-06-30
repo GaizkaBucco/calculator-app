@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+<body class="body-theme-1" id="document-body">
+  <div id="container">
+
+    <header id="header">
+      <div id="title"><h1>calc</h1></div>
+      <div id="theme-selector">
+        <p>THEME</p>
+        <div id="theme-toggle">
+          <div id="toggle-number">
+            <span id="theme-1-selector">1</span>
+            <span id="theme-2-selector">2</span>
+            <span id="theme-3-selector">3</span>
+          </div>
+          <div id="theme-toggle-slider" class="theme-toggle-slider-theme-1">
+            <div id="theme-toggle-slider-center" class="theme-toggle-slider-center-theme-1"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="body">
+      <div id="screen" class="screen-theme-1">
+        <div id="screen-content">
+          <div id="screen-content-inner">
+            <div id="screen-text-previous" data-previous-operand></div>
+            <div id="screen-text-current" data-current-operand></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="keyboard" class="keyboard-theme-1">
+        <div id="keyboard-container">
+        <button class="keyboard-btn number-btn number-btn-theme-1" data-number>7</button>
+        <button class="keyboard-btn number-btn number-btn-theme-1" data-number>8</button>
+        <button class="keyboard-btn number-btn number-btn-theme-1" data-number>9</button>
+        <button class="keyboard-btn text-btn text-btn-theme-1" data-delete>DEL</button>
+
+        <button class="keyboard-btn number-btn number-btn-theme-1" data-number>4</button>
+        <button class="keyboard-btn number-btn number-btn-theme-1" data-number>5</button>
+        <button class="keyboard-btn number-btn number-btn-theme-1" data-number>6</button>
+        <button class="keyboard-btn number-btn number-btn-theme-1" data-operation>+</button>
+
+        <button class="keyboard-btn number-btn number-btn-theme-1" data-number>1</button>
+        <button class="keyboard-btn number-btn number-btn-theme-1" data-number>2</button>
+        <button class="keyboard-btn number-btn number-btn-theme-1" data-number>3</button>
+        <button class="keyboard-btn number-btn number-btn-theme-1" data-operation>-</button>
+
+        <button class="keyboard-btn number-btn number-btn-theme-1" data-number>.</button>
+        <button class="keyboard-btn number-btn number-btn-theme-1" data-number>0</button>
+        <button class="keyboard-btn number-btn number-btn-theme-1" data-operation>/</button>
+        <button class="keyboard-btn number-btn number-btn-theme-1" data-operation>*</button>
+
+        <button class="keyboard-btn text-btn text-btn-theme-1" id="reset-btn" data-reset>RESET</button>
+        <button class="keyboard-btn equals-btn-theme-1" id="equals-btn" data-equals>=</button>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

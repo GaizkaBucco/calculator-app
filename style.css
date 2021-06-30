@@ -1,0 +1,281 @@
+body {
+   margin: 0;
+   padding: 0;
+   height: 100vh;
+   width: 100vw;
+   font-family: Spartan, Helvetica, sans-serif;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.body-theme-1 {
+   background: #3a4764;
+   color: #fff;
+}
+
+.body-theme-2 {
+   background: #e6e6e6;
+   color: #35352c;
+}
+
+.body-theme-3 {
+   background: #160628;
+   color: #ffe53d;
+}
+
+#container {
+   height: 90vh;
+   width: 85vw;
+}
+
+#header {
+   height: 15%;
+   display: flex;
+   justify-content: space-between;
+}
+
+h1 {
+   margin: 0.3em 0 0 0;
+   padding: 0;
+}
+
+#theme-selector {
+   font-size: 0.9em;
+   font-weight: 600;
+   display: flex;
+}
+
+#theme-selector>p {
+   margin: auto 2em auto 0;
+}
+
+#toggle-number {
+   margin: 0 0.5em;
+   display: flex;
+   justify-content: space-between;
+}
+
+#theme-toggle span {
+   justify-self: center;
+}
+
+#toggle-number>span:hover {
+   cursor: pointer;
+}
+
+#theme-toggle-slider {
+   display: flex;
+   align-items: center;
+   margin: 1.3em 0 0 0;
+   width: 80px;
+   height: 30px;
+   border-radius: 50px;
+   padding: 0 4px 0 4px;
+   display: flex;
+}
+
+.theme-toggle-slider-theme-1 {
+   background: #232c43;
+}
+
+.theme-toggle-slider-theme-2 {
+   background: #d1cccc;
+   justify-content: center;
+}
+
+.theme-toggle-slider-theme-3 {
+   background: #1d0934;
+   justify-content: flex-end;
+}
+
+#theme-toggle-slider-center {
+   height: 80%;
+   width: 30%;
+   border-radius: 100%;
+}
+
+.theme-toggle-slider-center-theme-1 {
+   background: #d03f2f;
+}
+
+.theme-toggle-slider-center-theme-2 {
+   background: #ca5502;
+}
+
+.theme-toggle-slider-center-theme-3 {
+   background: #00e0d1;
+}
+
+#body {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 100%;
+   height: 85%;
+}
+
+#screen {
+   width: 100%;
+   height: 20%;
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.screen-theme-1 {
+   background: #182034;
+}
+
+.screen-theme-2 {
+   background: #ededed;
+}
+
+.screen-theme-3 {
+   background: #1d0934;
+}
+
+#screen-content {
+   height: 70%;
+   width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#screen-content-inner {
+   overflow-x: hidden;
+   scrollbar-width: none;
+}
+
+#screen-content-inner::-webkit-scrollbar {
+   display: none;
+}
+
+#screen-text-previous {
+   text-align: end;
+}
+
+#screen-text-current {
+   font-size: 2.5em;
+   font-weight: 700;
+   padding-top: 0.2em;
+   text-align: end;
+   overflow-x: scroll;
+   scrollbar-width: none;
+}
+
+#screen-text-current::-webkit-scrollbar {
+   display: none;
+}
+
+#keyboard {
+   width: 100%;
+   height: 75%;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.keyboard-theme-1 {
+   background: #232c43;
+}
+
+.keyboard-theme-2 {
+   background: #d1cccc;
+}
+
+.keyboard-theme-3 {
+   background: #1d0934;
+}
+
+#keyboard-container {
+   width: 90%;
+   height: 90%;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-column-gap: 1em;
+   grid-row-gap: 1em;
+}
+
+.keyboard-btn {
+   border-radius: 6px;
+   font-family: Spartan, Helvetica, sans-serif;
+   font-size: 1.7em;
+   font-weight: 700;
+   border: none;
+   padding-top: 0.3em;
+}
+
+#reset-btn {
+   grid-column: 1 / 3;
+}
+
+#equals-btn {
+   grid-column: 3 / 5;
+   color: #ffffff;
+   font-size: 1.1em;
+}
+
+.equals-btn-theme-1 {
+   background: #d03f2f;
+   box-shadow: 0 4px #93261a;
+}
+
+.equals-btn-theme-2 {
+   background: #ca5502;
+   box-shadow: 0 4px #893901;
+}
+
+.equals-btn-theme-3 {
+   background: #00e0d1;
+   box-shadow: 0 4px #6cf9f2;
+   color: #ffffff;
+}
+
+.text-btn {
+   font-size: 1.1em;
+}
+
+.number-btn-theme-1 {
+   background: #eae3dc;
+   box-shadow: 0 4px #b4a597;
+   color: #444b5a;
+}
+
+.number-btn-theme-2 {
+   background: #e5e4e1;
+   box-shadow: 0 4px #a69d91;
+   color: #444b5a;
+}
+
+.number-btn-theme-3 {
+   background: #341c4f;
+   box-shadow: 0 4px #871c9c;
+   color: #ffe53d;
+}
+
+.text-btn-theme-1 {
+   background: #637097;
+   box-shadow: 0 4px #404e72;
+   color: #ffffff;
+}
+
+.text-btn-theme-2 {
+   background: #377f86;
+   box-shadow: 0 4px #1b5f65;
+   color: #ffffff;
+}
+
+.text-btn-theme-3 {
+   background: #58077d;
+   box-shadow: 0 4px #bc15f4;
+   color: #ffffff;
+}
+
+@media (min-width: 600px) {
+   #container {
+      max-width: 600px;
+   }
+}
